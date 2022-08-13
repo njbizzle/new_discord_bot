@@ -27,7 +27,7 @@ async def on_ready():
 async def on_member_join(member):
     await member.create_dm()
     await member.dm_channel.send(
-        f"lmao, {member} is such a dumb name lol"
+        f"lmao, {member.name} is such a dumb name lol"
     )
 
 client.run(TOKEN)
